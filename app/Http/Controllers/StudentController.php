@@ -21,11 +21,11 @@ class StudentController extends Controller
     public function store(Request $request)
     {
         $request->validate([
-            'name'=>'requared',
-            'surname'=>'requared',
-            'adress'=>'requared',
+            'name'=>'required',
+            'surname'=>'required',
+            'adress'=>'required',
         ]);
-        Student:create($request->all());
+        Student::create($request->all());
         return redirect()->route('student.create');
 
     }
@@ -36,9 +36,9 @@ class StudentController extends Controller
     public function update(Request $request, $id)
     {
         $request->validate([
-            'name'=>'requared',
-            'surname'=>'requared',
-            'adress'=>'requared',
+            'name'=>'required',
+            'surname'=>'required',
+            'adress'=>'required',
         ]);
         $student = Student::find($id);
         $student -> update($request->all());

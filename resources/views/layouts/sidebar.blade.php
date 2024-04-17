@@ -77,7 +77,7 @@
                         <li class="nav-item">
                             <a href="{{route('teacher.index')}}" class="nav-link">
                                 <i class="far fa-circle nav-icon"></i>
-                                <p>Таблица учителей</p>
+                                <p>Список</p>
                             </a>
                         </li>
                         <li class="nav-item">
@@ -100,7 +100,7 @@
                         <li class="nav-item">
                             <a href="{{route('student.index')}}" class="nav-link">
                                 <i class="far fa-circle nav-icon"></i>
-                                <p>Таблица студентов</p>
+                                <p>Список</p>
                             </a>
                         </li>
                         <li class="nav-item">
@@ -110,8 +110,28 @@
                             </a>
                         </li>
                     </ul>
-                </li>
-            </ul>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <i class="nav-icon far fa-envelope"></i>
+                        <p>
+                            Программисти
+                            <i class="fas fa-angle-left right"></i>
+                        </p>
+                    </a>
+                    <ul class="nav nav-treeview">
+                        <li class="nav-item">
+                            <a href="{{route('programmers.index')}}" class="nav-link">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Список</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="{{route('programmers.create')}}" class="nav-link">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Доб.программиста</p>
+                            </a>
+                        </li>
+                    </ul>
         </nav>
         <!-- /.sidebar-menu -->
     </div>

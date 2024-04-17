@@ -4,7 +4,7 @@
 @endsection
 
 @section('content')
-    <form action="{{route('student.update',$student)}}" method="get">
+    <form action="{{route('student.update',$student)}}" method="post">
     @csrf
         @method('PUT')
     <label>Name</label>
