@@ -4,9 +4,9 @@
 @endsection
 
 @section('content')
-    <form action="{{route('student.update',$student)}}" method="post">
+    <form action="{{route('student.store')}}" method="post">
         @csrf
-        @method('PUT')
+
         <label>Name</label>
         <input type="text" name="name" class="form-control" id="">
         <label>Surname</label>

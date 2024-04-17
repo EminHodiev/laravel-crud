@@ -5,7 +5,7 @@ use App\Livewire\Counter;
 use App\Livewire\CreatePost;
 use App\Http\Controllers\TeacherController;
 use App\Http\Controllers\StudentController;
-
+use App\Http\Controllers\ProgrammerController;
 
 /*
 |--------------------------------------------------------------------------
@@ -35,3 +35,5 @@ Route::get('/index',function (){
 Route::resource('teacher',TeacherController::class);
 
 Route::resource('student',StudentController::class);
+
+Route::resource('programmers', ProgrammerController::class);
